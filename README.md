@@ -1,6 +1,6 @@
 # Links
 
-- Solution URL: (https://github.com/levani-sarishvili/nft-preview-card-component.git)
+- Solution URL: (https://github.com/levani-sarishvili/prifile-card-component.git)
 - Live Site URL: (https://nft-preview-card-component-sarishvili.netlify.app/)
 
 # Built with
