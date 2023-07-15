@@ -11,6 +11,20 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&family=Outfit:wght@300;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;600;700&family=Red+Hat+Display:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
 
     <title>Frontend Mentor | Profile card component</title>
@@ -26,16 +40,36 @@
       />
     </div>
     <section class="profile-card">
-      <div class="profile-cover">
-        <img
-          class="profile-img"
-          src="/images/image-victor.jpg"
-          alt="victor's image"
-        />
-      </div>
+      <img
+        class="profile-cover"
+        src="/images/bg-pattern-card.svg"
+        alt="profile cover"
+      />
 
-      <div class="profile-details">Victor Crest 26 London</div>
-      <div class="profile-stat">80K Followers 803K Likes 1.4K Photos</div>
+      <img
+        class="profile-img"
+        src="/images/image-victor.jpg"
+        alt="victor's image"
+      />
+
+      <div class="profile-details">
+        <div class="name-age">
+          <p class="profile-name">Victor Crest</p>
+          <p class="profile-age">26</p>
+        </div>
+        <p class="profile-city">London</p>
+      </div>
+      <div class="line"></div>
+      <div class="profile-stat-num">
+        <p>80K</p>
+        <p>803K</p>
+        <p>1.4K</p>
+      </div>
+      <div class="profile-stat-text">
+        <p>Followers</p>
+        <p>Likes</p>
+        <p>Photos</p>
+      </div>
     </section>
   </body>
 </html>
