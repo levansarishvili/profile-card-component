@@ -8,6 +8,7 @@
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- Mobile first responsive design - breakpoint at 375px
 
 # Author
 

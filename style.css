@@ -1,7 +1,13 @@
+/* || GENERAL CSS */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
@@ -15,110 +21,130 @@ body {
   font-family: Kumbh Sans;
 }
 
-/* Background pictures */
-.top-background-pattern {
+/* || Background pictures */
+
+.top-background-mobile {
   position: absolute;
 
   left: 0;
   top: 0;
 }
-.bottom-background-pattern {
+.bottom-background-mobile {
   position: absolute;
 
   right: 0;
   bottom: 0;
 }
 
-/* Main section */
-.profile-card {
+/* || MAIN CSS */
+
+.card {
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: hidden;
   position: relative;
 
-  width: 350px;
-  border-radius: 15px;
+  width: 32.6rem;
+  border-radius: 1.5rem;
   background: #fff;
-  box-shadow: 0px 50px 100px -20px rgba(8, 70, 94, 0.5);
+  box-shadow: 0 5rem 10rem -2rem rgba(8, 70, 94, 0.5);
   z-index: 1;
 }
 
-.profile-cover {
-  margin-bottom: 72px;
+.card__cover {
+  margin-bottom: 7.2rem;
+  width: 100%;
 }
 
-.profile-img {
+.card__img {
   position: absolute;
-  border-radius: 96px;
-  border: 5px solid #fff;
-  top: 90px;
+  border-radius: 9.6rem;
+  border: 0.5rem solid #fff;
+  top: 9rem;
 }
 
-.name-age {
+.card__details-box {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 13px;
+  margin-bottom: 1.3rem;
 }
 
-.profile-name {
-  margin-right: 8.5px;
+.card__details-box-name {
+  margin-right: 0.85rem;
   color: #2e3349;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.profile-age {
+.card__details-box-age {
   color: #6b7082;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-.profile-city {
+.card__details-box-city {
   color: #6b7082;
   text-align: center;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin-bottom: 28px;
+  margin-bottom: 2.8rem;
 }
 
-.line {
+.card__line {
   background: #e8e9ec;
-  width: 350px;
-  height: 1px;
-  margin-bottom: 24px;
+  width: 32.6rem;
+  height: 0.1rem;
+  margin-bottom: 2.4rem;
 }
 
-.profile-stat-num {
+.card__stat {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  margin-bottom: 9px;
-  width: 234.5px;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.card__stat-items {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card__stat-num {
+  margin-bottom: 0.9rem;
   color: #2e3349;
-  font-size: 18px;
+  font-size: 1.8rem;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
 }
 
-.profile-stat-text {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-bottom: 27px;
-  width: 246px;
+.card__stat-text {
+  margin-bottom: 2.7rem;
   color: #6b7082;
-  font-size: 10px;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  letter-spacing: 1.5px;
+  letter-spacing: 0.15rem;
+}
+
+/* || MEDIA QUERIES */
+
+@media only screen and (min-width: 375px) {
+  .card {
+    width: 35rem;
+  }
+
+  .card__line {
+    width: 35rem;
+  }
 }

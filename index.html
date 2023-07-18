@@ -30,45 +30,49 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
-    <div class="top-background-pattern">
-      <img src="/images/bg-pattern-top.png" alt="Top background picture" />
+    <!-- Background patterns for mobile -->
+    <!-- <div class="top-background-mobile">
+      <img src="/images/top.png" alt="Top oval background" />
     </div>
-    <div class="bottom-background-pattern">
+    <div class="bottom-background-mobile">
+      <img src="/images/bottom.png" alt="Bottom oval background" />
+    </div> -->
+
+    <section class="card">
       <img
-        src="/images/bg-pattern-bottom.png"
-        alt="Bottom background picture"
-      />
-    </div>
-    <section class="profile-card">
-      <img
-        class="profile-cover"
+        class="card__cover"
         src="/images/bg-pattern-card.svg"
         alt="profile cover"
       />
 
       <img
-        class="profile-img"
+        class="card__img"
         src="/images/image-victor.jpg"
         alt="victor's image"
       />
 
-      <div class="profile-details">
-        <div class="name-age">
-          <p class="profile-name">Victor Crest</p>
-          <p class="profile-age">26</p>
+      <div class="card__details">
+        <div class="card__details-box">
+          <p class="card__details-box-name">Victor Crest</p>
+          <p class="card__details-box-age">26</p>
         </div>
-        <p class="profile-city">London</p>
+        <p class="card__details-box-city">London</p>
       </div>
-      <div class="line"></div>
-      <div class="profile-stat-num">
-        <p>80K</p>
-        <p>803K</p>
-        <p>1.4K</p>
-      </div>
-      <div class="profile-stat-text">
-        <p>Followers</p>
-        <p>Likes</p>
-        <p>Photos</p>
+      <div class="card__line"></div>
+
+      <div class="card__stat">
+        <div class="card__stat-items">
+          <p class="card__stat-num">80K</p>
+          <p class="card__stat-text">Followers</p>
+        </div>
+        <div class="card__stat-items">
+          <p class="card__stat-num">803K</p>
+          <p class="card__stat-text">Likes</p>
+        </div>
+        <div class="card__stat-items">
+          <p class="card__stat-num">1.4K</p>
+          <p class="card__stat-text">Photos</p>
+        </div>
       </div>
     </section>
   </body>
